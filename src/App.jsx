@@ -1,8 +1,11 @@
+import { Button } from '@mui/material'
+import { Alarm } from '@mui/icons-material'
+
 export default function App() {
   return (
     <>
-      <h1>Hello World</h1>
-      <p>something</p>
+      <Button>Hello World</Button>
+      <Alarm />
     </>
   )
 }
