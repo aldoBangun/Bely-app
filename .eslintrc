@@ -20,6 +20,8 @@
     "plugin:react/jsx-runtime"
   ],
   "rules": {
-    "semi": ["warn", "never"]
+    "semi": ["warn", "never"],
+    "comma-dangle": ["warn", "never"],
+    "linebreak-style": "off"
   }
 }
