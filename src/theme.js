@@ -17,6 +17,9 @@ export default createTheme({
     },
     warning: {
       main: '#FFBA49'
+    },
+    gray: {
+      main: '#8E8E93'
     }
   }
 })
