@@ -10,7 +10,8 @@ export default function Navigation() {
         sx={{
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
+          height: '4rem'
         }}
       >
         <LogoSmaller />
