@@ -21,5 +21,21 @@ export default createTheme({
     gray: {
       main: '#8E8E93'
     }
+  },
+  shadows: {
+    soft: '0px 6px 40px rgba(173, 173, 173, 0.25)'
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          boxShadow: 'none',
+          borderRadius: 99,
+          '&:hover': {
+            boxShadow: 'none'
+          }
+        }
+      }
+    }
   }
 })

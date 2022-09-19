@@ -5,7 +5,7 @@ import MenuBar from '../navigation/MenuBar'
 
 export default function Navigation() {
   return (
-    <AppBar sx={{ boxShadow: 'none' }} color="transparent" position="static">
+    <AppBar sx={{ boxShadow: 'soft' }} color="transparent" position="static">
       <Container
         sx={{
           display: 'flex',
