@@ -1,8 +1,10 @@
-import { Box, IconButton, Button } from '@mui/material'
+import { useState } from 'react'
+import { Box, IconButton } from '@mui/material'
 import { ShoppingCartOutlined, NotificationsOutlined, EmailOutlined } from '@mui/icons-material'
+import BelyButton from '../UI/BelyButton'
 
 export default function MenuBar() {
-  const authenticated = false
+  const [authenticated, setAuthenticated] = useState(false)
 
   return (
     <Box sx={{ display: 'flex', gap: 2 }}>
@@ -22,8 +24,8 @@ export default function MenuBar() {
         </>
       ) : (
         <Box sx={{ display: 'flex', gap: 1 }}>
-          <Button variant="contained">Login</Button>
-          <Button variant="outlined" color="gray">Sign Up</Button>
+          <BelyButton variant="contained" onClick={() => setAuthenticated(true)}>Login</BelyButton>
+          <BelyButton variant="outlined" color="gray">Sign Up</BelyButton>
         </Box>
       )}
     </Box>
